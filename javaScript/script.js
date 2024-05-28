@@ -2,17 +2,15 @@ import { AnimalParaAdocao } from "./classAnimalAdocao.js";
 
 function cadastrarAnimal (){
     let nome = prompt('Seja bem-vindo ao cadastro do seu animal. Digite o nome dele:');
-    console.log(nome)
     let raca = prompt('Digite a raça do animal');
-    console.log(raca)
     let idade = prompt('Digite a idade do animal');
-    console.log(idade)
-
+   
+    //motando o array
     let animal = [nome,raca,idade];
 
     //Passa o Array para class construir o novo animal
     let novoAnimal = new AnimalParaAdocao(animal);
-    console.log(novoAnimal)
+    
     
     return novoAnimal;
     
