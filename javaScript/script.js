@@ -1,5 +1,6 @@
 import { CadastrarAnimal } from "./CadastrarAnimal.js";
 
+
 // função sendo chamada sozinha pois a fuNÇÃO que criar o animal está sendo salvo no arquivo animalCadastrado.js
 let AnimalCadastrado = CadastrarAnimal();
 
