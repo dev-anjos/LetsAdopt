@@ -1,6 +1,5 @@
 import { CadastrarAnimal } from "./CadastrarAnimal.js";
 
-
 // função sendo chamada sozinha pois a fuNÇÃO que criar o animal está sendo salvo no arquivo animalCadastrado.js
 let AnimalCadastrado = CadastrarAnimal();
 
@@ -14,18 +13,22 @@ while (continuar) {
     if (removerNomeLowerCase === 'sim') {
         let novoNome = prompt('Digite o nome correto');
         AnimalCadastrado.alterarNome(novoNome);
-        alert(`Nome alterado com sucesso, agora o animalzinho está cadastrado como ${AnimalCadastrado?.nome}, obrigado.`);
+        alert(`Nome alterado com sucesso, agora o animalzinho está cadastrado como Animal cadastrado como:
+        Nome: ${AnimalCadastrado?.nome}  
+        raça: ${AnimalCadastrado?.raca}
+        Idade: ${AnimalCadastrado?.idade} 
+        Obrigado por Cadastrar seu animal :), obrigado.`);
+
         continuar = false // o loop while será parado
     }
     else if (removerNomeLowerCase == 'nao' || removerNomeLowerCase == 'não') {
         alert(
         `   
-            Animal cadastrado como:
-            Nome: ${AnimalCadastrado?.nome}  
-            raça: ${AnimalCadastrado?.raca}
-            Idade: ${AnimalCadastrado?.idade} 
-
-            Obrigado por Cadastrar seu animal :)
+        Animal cadastrado como:
+        Nome: ${AnimalCadastrado?.nome}  
+        raça: ${AnimalCadastrado?.raca}
+        Idade: ${AnimalCadastrado?.idade} 
+        Obrigado por Cadastrar seu animal :)
         `
     );
         continuar = false // o loop while será parado
