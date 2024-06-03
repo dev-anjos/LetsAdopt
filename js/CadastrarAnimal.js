@@ -1,4 +1,4 @@
-import { AnimalParaAdocao } from "./classAnimalAdocao";
+import { AnimalParaAdocao } from "./classAnimalAdocao.js";
 
 export const CadastrarAnimal = () => {
     let nome = '';
