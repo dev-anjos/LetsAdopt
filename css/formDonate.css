@@ -1,0 +1,189 @@
+.formDonate{
+    width: 30vw;
+    background-color: var(--cor-bege);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formDonate-header{
+    background-color: var(--cor-azul);
+    color: var(--cor-bege);
+    text-align: center;
+    padding: 20px;
+    border-radius:20px 20px ;
+    font-size: 20px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formDonate-personal-data{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0 20px;
+}
+
+.formDonate-header-tittle{
+    font-size: 1em;
+}
+
+.personal-data-title{
+    font-family: var(--fonte-princpal);
+    color: var(--cor-azul);
+    margin: 0 0 20px 0px ;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.personal-data{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    margin-top: 10% ;
+}
+
+.inputStyling{
+    height: 3vw;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.inputStyling::placeholder{
+    opacity: 50%;
+    font-size: 0.7em;
+}
+.inputStyling:focus{
+    outline: none;
+}
+
+.labelStyling{
+    color: var(--cor-azul);
+    margin: 5% 5% 5% 0;
+}
+
+.inputsContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.adress{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+hr{
+    border-color:var(--cor-azul);
+    box-sizing:border-box;
+    width:100%;  
+    margin: 2rem 0
+}
+
+.containerButton{
+    text-align: center;
+    margin: 20px;
+}
+.subimitDontateStyling{
+    background-color: var(--cor-azul);
+    color: var(--cor-bege);
+    padding: 0.7em 3em;
+    border-radius: 15px;
+    border: transparent;
+}
+
+.numberAdress{
+    width: 5rem;
+}
+.stateInput{
+    width: 11rem;
+}
+
+.errorMessage{
+    font-size: 1vw;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    
+}
+
+.fade-out{
+    opacity: 0;
+}
+
+#messageBox{
+    width: 15%;
+    position:fixed;
+    top: 20vh;
+    left: 80%;
+}
+
+#messageSucess{
+    width: 15%;
+    position: fixed;
+    top: 20vh;
+    left: 80%;
+}
+.control select{ 
+    color: var(--cor-azul) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: transparent !important;
+}
+
+.control input {
+    color: var(--cor-azul);
+    background-color: rgb(255, 255, 255);
+    border: transparent;
+}
+
+.icon-left-color{
+    color: black !important;
+}
+
+.has-icons-right{
+    color: black !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .formDonate{
+        width: 60vw;
+    }
+
+    #messageBox{
+        width: 20%;
+        position:fixed;
+        top: 20vh;
+        left: 80%;
+    }
+    
+    #messageSucess{
+        width: 35%;
+        position: fixed;
+        top: 20vh;
+        left: 70%;
+    }
+
+    .input{
+        width: 200px;
+    }
+
+    .personal-data{
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        margin-top: 10% ;
+    }
+
+    .inputStyling::placeholder{
+        font-size: 1rem;
+    }
+}
+
+
+

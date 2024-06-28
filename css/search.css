@@ -1,0 +1,40 @@
+.sessao__pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background: var(--cor-gradiente-bege);
+}
+
+.btn__pesquisa{
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid var(--cor-azul);
+    
+}
+
+.pesquisa__titulo{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--cor-azul);
+}
+
+.pesquisa__txt{
+    color: var(--cor-azul);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .btn__pesquisa{
+        width: 70%;
+    }
+    
+    .pesquisa__txt{
+        margin: 0 6em;
+    }
+}

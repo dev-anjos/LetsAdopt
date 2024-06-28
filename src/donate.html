@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>LetsAdopt - Donate</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        
+        <div class="cabecalho__container">
+            <div class="cabecalho__tablet"> <!--para o mobile-->
+                <h1 class="titulo__cabecalho">LetsAdopt</h1>
+                <img src="../img/v987-11a.jpg" alt="Logo LetsAdopt" srcset="" class="cabecalho_logo-principal-teblet">
+            </div>
+            <img src="../img/Menu.svg" alt="Botão menu" srcset="" class="cabecalho_logo-menu">
+            <img src="../img/v987-11a.jpg" alt="Logo AdotaPet" srcset="" class="cabecalho_logo-principal">
+            <img src="../img/Usuario.svg" alt="Botao Usuario" srcset="" class="cabecalho_logo-perfil">
+    
+            <div class="cabecalho__tablet">
+                <a href="#" class="cabecalho__botoes-tablet">Sobre nós</a>
+                <a href="#" class="cabecalho__botoes-tablet">Quero Doar</a>
+                <a href="#" class="cabecalho__botoes-tablet">Contatos</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo__principal">
+
+        <form  class="formDonate" id="formDonate">
+
+            <div class="formDonate-header">
+                <h1 class="formDonate-header-tittle">Cadastro Responsavel animal</h1>
+            </div>
+
+
+            <div class="formDonate-personal-data">
+                
+                <h2 class="personal-data-title">Dados pessoais</h2>
+                <div id="messageSucess"></div>
+
+                <div class="inputsContainer">
+                    <div >
+                        <div class="personal-data">
+                            <label for="fullName" class="labelStyling">Nome completo</label>
+                            <div class="control  ">
+                                <input class="input is-rounded inputStyling" id="fullName" name="FullName" placeholder="Fulano detal"  required/>
+                            </div>
+                        </div>
+    
+                        <div class="personal-data">
+                            <label for="email" class="labelStyling">E-mail</label>
+                            <!-- <input type="email" id="email" name="email" placeholder="exemplo@wmail.com" class="inputStyling" required> -->
+
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-rounded" id="email" name="email" placeholder="exemplo@wmail.com" class="inputStyling" required/>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope icon-left-color" ></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check icon-right-color" ></i>
+                                </span>
+                                </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="personal-data">
+                            <label for="phone" class="labelStyling">Celular</label>
+
+                            <div class="control  ">
+                                <input class="input is-rounded inputStyling" type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" class="inputStyling" required/>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                
+                <hr/>
+
+                <h2 class="personal-data-title">Endereço</h2>
+
+                <div class="inputsContainer adress">
+                    <div >
+                        <div class="personal-data">
+
+                            <div class="containerErro">
+                                <label for="zipCode" class="labelStyling">CEP</label>
+
+                                <div id="messageBox" ></div>
+                            </div>
+
+                            <div class="control is-loading ">
+                                <input class="input is-rounded" type="text"  id="zipCode" name="zipCode" placeholder="Aguardando CEP" />
+                                
+                            </div>
+                            
+                            <label for="city" class="labelStyling">Cidade</label>
+                            <div class="control  ">
+                                <input class="input is-rounded " ttype="text" name="city" id="city" placeholder="" class="inputStyling"/>
+                                
+                            </div>
+                            
+                            <label for="numberAdress" class="labelStyling">Numero</label>
+                            <div class="control numberAdress">
+                                <input class="input is-rounded inputStyling " type="text" name="numberAdress" id="numberAdress" />
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="personal-data">
+                            <label for="road" class="labelStyling">Rua</label>
+                            <div class="control  ">
+                                <input class="input is-rounded inputStyling" type="text" name="road" id="road" placeholder="" class="inputStyling" required/>
+                            </div>
+
+                            <label for="neighborhood" class="labelStyling">Bairro</label>
+                            <div class="control ">
+                                <input class="input is-rounded inputStyling" type="text" name="neighborhood" placeholder="" class="inputStyling" id="neighborhood"required/>
+                            </div>
+
+                            <label for="state" class="labelStyling">Estado</label>
+
+                            <div class="control select is-rounded">
+                                <select id="state" name="state" class="inputStyling stateInput">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="containerButton">
+                <button type="submit" class="subimitDontateStyling" id="submitFormDonate" form="formDonate">Proximo</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__cabecalho">
+            <h1 class="rodape__titulo">AdotaPet</h1>
+            <img src="../img/v987-11a.jpg" alt="" srcset="" class="rodape__logo">
+        </div>
+
+        <div class="rodape__txt">
+            <p class="txt">Adote Petz é um programa criado para estreitar laços entre pessoas que têm o sonho de adotar um pet e nossas ONGs e protetores parceiros.
+            amos juntos incentivar a adoção, conscientizar sobre a posse responsável e fomentar a cultura de doação em prol do bem-estar animal.</p>
+        </div>
+
+        <section class="rodape__links">
+            <div class="links">
+                <h1 class="links__titulo">Institucional</h1>
+                <ul class="links__item">
+                    <li class="item">Sobre Nós</li>
+                    <li class="item">Os pets nas lojas</li>
+                    <li class="item">Transparência com você</li>
+                    <li class="item">histórias de impacto</li>
+                    <li class="item">Projetos Sociais</li>
+                    <li class="item">Unidades</li>
+                    <li class="item">FAQ</li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <h1 class="links__titulo">Central de Atendimento</h1>
+                <ul class="links__item">
+                    <li class="item">Atendimento</li>
+                    <li class="item">Termos e condições</li>
+                    <li class="item">Leis para abandono animal</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/dev-anjos/" class="redes__img"><img src="../img/icones/linkedin.png" alt="Icone do Linkedin" srcset=""></a>
+            <a href="#" class="redes__img"><img src="../img/icones/facebook.png" alt="Icone do Facebook" srcset=""></a>
+            <a href="#" class="redes__img"><img src="../img/icones/instagram.png" alt="Icone do instagram" srcset=""></a>
+            <p class="redes__copyright">
+                Copyright (c) 2023 Dev Anjos
+                Todos diretos resevados
+            </p>
+        </div>
+    </footer>
+    
+  
+    <script src="../js/zipCodeAutofill.js"></script>
+    <script src="../js/registerResponsible.js"></script>
+    <script src="https://kit.fontawesome.com/0162deb0fb.js" defer></script>
+    </body>
+    </html>
+<body>
+     
+
+
+  

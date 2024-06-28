@@ -1,0 +1,15 @@
+.radioCenter{
+    display: flex;
+    
+    align-items: center;    /* Alinha verticalmente */
+             
+}
+
+.message-body, .message-heade{
+    color: white;
+}
+
+.noticeFormAnimal{
+    color: var(--cor-azul)
+}
+

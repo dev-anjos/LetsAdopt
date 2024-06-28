@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bulma": "^1.0.1"
+  },
+  "name": "projeto-adotapet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-anjos/LetsAdopt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-anjos/LetsAdopt/issues"
+  },
+  "homepage": "https://github.com/dev-anjos/LetsAdopt#readme",
+  "description": ""
+}

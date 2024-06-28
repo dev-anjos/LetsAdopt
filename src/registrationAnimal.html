@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>LetsAdopt - Donate</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        
+        <div class="cabecalho__container">
+            <div class="cabecalho__tablet"> <!--para o mobile-->
+                <h1 class="titulo__cabecalho">LetsAdopt</h1>
+                <img src="../img/v987-11a.jpg" alt="Logo LetsAdopt" srcset="" class="cabecalho_logo-principal-teblet">
+            </div>
+            <img src="../img/Menu.svg" alt="Botão menu" srcset="" class="cabecalho_logo-menu">
+            <img src="../img/v987-11a.jpg" alt="Logo AdotaPet" srcset="" class="cabecalho_logo-principal">
+            <img src="../img/Usuario.svg" alt="Botao Usuario" srcset="" class="cabecalho_logo-perfil">
+    
+            <div class="cabecalho__tablet">
+                <a href="#" class="cabecalho__botoes-tablet">Sobre nós</a>
+                <a href="#" class="cabecalho__botoes-tablet">Quero Doar</a>
+                <a href="#" class="cabecalho__botoes-tablet">Contatos</a>
+            </div>
+        </div>
+      </header>
+
+        <main class="conteudo__principal">
+
+            <form action="" class="formDonate" id="formDonate">
+
+                <div class="formDonate-header">
+                    <h1 class="formDonate-header-tittle">Cadastro do Animal</h1>
+                </div>
+
+
+                <div class="formDonate-personal-data">
+                    
+                    <p class="noticeFormAnimal"><strong>Atenção:</strong><br> Os dados do animal aparecerá da forma que for escrita nos campos</p>
+                    <div id="messageSucess"></div>
+
+                    <div class="inputsContainer">
+                        <div >
+                            <div class="personal-data">
+                                <label for="nameAnimal" class="labelStyling">Nome do Animal</label>
+                                <div class="control">
+                                    <input class="input is-rounded" type="text"id="nameAnimal" name="nameAnimal" class="inputStyling" required />
+                                </div>
+                                
+                                
+                                <label for="animalSpecies" class="labelStyling">Selecione a especie:</label>
+                                <div class="control select is-rounded ">
+                                    <select id="animalSpecies" name="animalSpecies" class="inputStyling stateInput ">
+                                        <option value="Cachorro">Cachorro</option>
+                                        <option value="Gato">Gato</option>
+                                    </select>
+                                </div>
+
+                                <label for="animalAge" class="labelStyling">Idade</label>
+                                <div class="control">
+                                    
+                                    <input class="input is-rounded" type="text" id="animalAge" name="animalAge" class="inputStyling" required />
+
+                                </div>
+
+                                <label for="animalBreed" class="labelStyling">Raça</label>
+                                <div class="control">
+                                    
+                                    <input class="input is-rounded" type="text" id="animalBreed" name="animalBreed" class="inputStyling" required />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="personal-data">
+                                <div class="control">
+                                    <label for="sex" class="labelStyling">Sexo do animal:</label><br>
+                                    <label class="radio">
+                                        <input type="radio" name="sex" value="Macho" id="sexMasc" required/>
+                                        Macho
+                                    </label>
+                                    <label class="radio" >
+                                        <input type="radio" name="sex" value="fêmea"  id="sexFem" required/>
+                                        Femea
+                                    </label>
+                                </div>
+
+                                
+                               
+                            </div>
+
+                            <div class="personal-date">
+                                <label for="photoAnimal" class="file-label labelStyling">Envie a foto do animal</label>
+                                <div class="file is-boxed">
+                                    
+                                    <label class="file-label labelStyling" >
+                                      <input class="file-input" type="file" id="photoAnimal" name="photoAnimal" required/>
+                                      <span class="file-cta">
+                                        <span class="file-icon">
+                                          <i class="fas fa-upload"></i>
+                                        </span>
+                                        <span class="file-label"> Escolha um… </span>
+                                      </span>
+                                    </label>
+                                </div>
+
+                                
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="containerButton">
+                    <button type="submit" class="subimitDontateStyling" id="submitFormDonate" form="formDonate">Salvar cadastro</button>
+                </div>
+
+            </form>
+
+        </main>
+
+        <footer class="rodape">
+            <div class="rodape__cabecalho">
+                <h1 class="rodape__titulo">AdotaPet</h1>
+                <img src="../img/v987-11a.jpg" alt="" srcset="" class="rodape__logo">
+            </div>
+    
+            <div class="rodape__txt">
+                <p class="txt">Adote Petz é um programa criado para estreitar laços entre pessoas que têm o sonho de adotar um pet e nossas ONGs e protetores parceiros.
+                amos juntos incentivar a adoção, conscientizar sobre a posse responsável e fomentar a cultura de doação em prol do bem-estar animal.</p>
+            </div>
+    
+            <section class="rodape__links">
+                <div class="links">
+                    <h1 class="links__titulo">Institucional</h1>
+                    <ul class="links__item">
+                        <li class="item">Sobre Nós</li>
+                        <li class="item">Os pets nas lojas</li>
+                        <li class="item">Transparência com você</li>
+                        <li class="item">histórias de impacto</li>
+                        <li class="item">Projetos Sociais</li>
+                        <li class="item">Unidades</li>
+                        <li class="item">FAQ</li>
+                    </ul>
+                </div>
+    
+                <div class="links">
+                    <h1 class="links__titulo">Central de Atendimento</h1>
+                    <ul class="links__item">
+                        <li class="item">Atendimento</li>
+                        <li class="item">Termos e condições</li>
+                        <li class="item">Leis para abandono animal</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/dev-anjos/" class="redes__img"><img src="../img/icones/linkedin.png" alt="Icone do Linkedin" srcset=""></a>
+                <a href="#" class="redes__img"><img src="../img/icones/facebook.png" alt="Icone do Facebook" srcset=""></a>
+                <a href="#" class="redes__img"><img src="../img/icones/instagram.png" alt="Icone do instagram" srcset=""></a>
+                <p class="redes__copyright">
+                    Copyright (c) 2023 Dev Anjos
+                    Todos diretos resevados
+                </p>
+            </div>
+        </footer>
+    
+        <!-- <script src="../js/script.js" type="module" defer ></script>     -->
+       
+       <script src="../js/registerAnimal.js" type="module"></script>
+       <script src="../js/validations.js" type="module"></script>
+
+        <script src="https://kit.fontawesome.com/0162deb0fb.js" defer></script>
+    </body>
+    </html>
+<body>
+     
+
+
+  

@@ -1,0 +1,149 @@
+.principal__cabecalho{
+    text-align: center;
+    background-color: var(--cor-branca);
+    box-shadow: 4px 4px 0.3em rgba(98, 98, 98, 0.25);
+    padding: 0.5em;
+    font-size: 25px;
+    font-weight: 700;
+    color: #002F52;
+}
+
+.conteudo__principal{
+    background-color: var(--cor-branca);
+}
+
+.img__pets{
+    width: 400px;
+    height: 400px;
+    margin: 0.5em 0;
+    border-radius: 10px
+}
+
+.lista-pets{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+}
+
+.conteudo__pets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin: 1em 0.5em;
+    border-radius: 0 0 10px 10px;
+}
+
+.lista{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1.5em ;
+    border: 5px solid transparent;
+    box-shadow: 10px 10px 2em rgba(98, 98, 98, 0.25);
+    border-radius: 30px ;
+}
+
+.pet__nome{
+    font-size: 25px;
+    color: var(--cor-azul);
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+
+.pet__descricacao{
+    padding: 0.2em 0;
+    font-size: 20px;
+    color: var(--cor-laranja);
+    text-align: center;
+    
+}
+
+.btn__saiba{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-branca);
+    width: 50%;
+    margin: 0.5em 0;
+    padding: 1.5em 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--cor-laranja);
+}
+
+.btn__saiba:hover{
+    background-color: var(--cor-bege);
+    color: var(--cor-azul);
+    transition: 1s;
+    transform: scale(1.1);
+    zoom: 1;
+}
+/* .btn__saiba span{
+    width: 100px !important;
+} */
+
+.containerInfos{
+    display: flex;
+}
+
+.dadosAnimal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.dadosAnimal p{
+    margin-left: 0.5em;
+}
+
+.responsavel{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.tittle_responsavel{
+    font-size: 1.5em;
+    color: var(--cor-azul);
+    font-weight: 600;
+    text-align: left;
+    margin: 0.5em 0;
+    
+}
+
+.containerDadosResponsavel{
+    text-align:left ;
+}
+
+.dadosResposanvel{
+
+}
+
+@media screen and (min-width: 768px) {
+    .lista{
+        
+        width: 45%;
+        justify-content: space-evenly;
+        margin: 1.5em 0 ;
+    }
+
+    .lista-pets{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .btn__saiba{
+        padding: 0.5em 1em;
+        line-height: 1.5em;
+    }
+
+    .img__pets{
+        width: 170px;
+    }
+
+}

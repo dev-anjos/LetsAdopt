@@ -1,0 +1,42 @@
+@import url(./css/header.css);
+@import url(./css/search.css);
+@import url(./css/petList.css);
+@import url(./css/footer.css);
+@import url(./css/formDonate.css);
+@import url(./css/registrationAnimal.css);
+@import url('https://fonts.googleapis.com/css2?family= Raleway: wght @500;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO');
+@import url(./node_modules/bulma/css/bulma.css);
+@import url(./node_modules/bulma/css/bulma.css.map);
+@import url(./node_modules/bulma/css/bulma.min.css);
+@import url("https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css"); 
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --fonte-princpal: font-family: 'Raleway', sans-serif;
+    --cor-bege: #faebd9;
+    --cor-laranja:#b85b2d;
+    --cor-azul:#002F52;
+    --cor-branca: #ffffff;
+    --cor-gradiente-bege: linear-gradient(349deg, rgba(255,255,255,1) 46%, rgba(253,247,240,1) 54%, rgba(250,235,217,1) 65%);
+    --cor-gradiente-laranja: linear-gradient(349deg, rgba(255,255,255,1) 51%, rgba(243,227,219,1) 58%, rgba(234,206,192,1) 64%, rgba(184,91,45,1) 84%);
+    --fonte-cabecalho: 'Lobster', cursive;
+}
+
+html,body{
+    box-sizing: border-box;
+    font-family:'Raleway', sans-serif; 
+    font-size: 16px;
+    
+}
+
+input::placeholder{
+    color: rgb(51, 51, 51) !important;
+    opacity: 50% !important;
+}
+
