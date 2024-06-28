@@ -1,9 +1,9 @@
-@import url(./css/header.css);
-@import url(./css/search.css);
-@import url(./css/petList.css);
-@import url(./css/footer.css);
-@import url(./css/formDonate.css);
-@import url(./css/registrationAnimal.css);
+@import url(./header.css);
+@import url(./search.css);
+@import url(./petList.css);
+@import url(./footer.css);
+@import url(./formDonate.css);
+@import url(./registrationAnimal.css);
 @import url('https://fonts.googleapis.com/css2?family= Raleway: wght @500;600;700 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO');
