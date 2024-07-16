@@ -15,10 +15,32 @@
         <div class="cabecalho__container">
             <div class="cabecalho__tablet"> <!--para o mobile-->
                 <h1 class="titulo__cabecalho">LetsAdopt</h1>
-                <img src="./img/v987-11a.jpg" alt="Logo LetsAdopt" srcset="" class="cabecalho_logo-principal-teblet">
+                <a href="index.html"><img src="./img/v987-11a.jpg" alt="Logo LetsAdopt" srcset="" class="cabecalho_logo-principal-teblet"></a>
             </div>
-            <img src="./img/Menu.svg" alt="Botão menu" srcset="" class="cabecalho_logo-menu">
-            <img src="./img/v987-11a.jpg" alt="Logo AdotaPet" srcset="" class="cabecalho_logo-principal">
+            
+            <div>
+
+            <button type="button" id="menu">
+                <img src="./img/Menu.svg" alt="Botão menu" srcset="" class="cabecalho_logo-menu">
+            </button>
+
+            <ul class="opcoes_menu" id="opcoes_menu">
+                <label for="opcoes-menu" class="opcoes__label">
+                    <li class="opcoes__item">Opções</li>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Sobre nos</a>
+                    </li>
+
+                    <li class="lista-menu__item">
+                        <a href="./donate.html" class="lista-menu__link">Quero doar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="./index.html"><img src="./img/v987-11a.jpg" alt="Logo AdotaPet" srcset="" class="cabecalho_logo-principal"></a>
             <img src="./img/Usuario.svg" alt="Botao Usuario" srcset="" class="cabecalho_logo-perfil">
     
             <div class="cabecalho__tablet">
@@ -33,68 +55,63 @@
 
     <section class="sessao__pesquisa">
         <h2 class="pesquisa__titulo">O que você procura?</h2>
-        <input type="search" value="" class="btn__pesquisa" >
-        <p class="pesquisa__txt">Todo animal merece um lar e todo lar merece um animal que veio da rua</p>
+        <input type="search" id="searchBar" class="btn__pesquisa" >
+        <p class="pesquisa__txt">Todo animal merece um lar e todo lar merece um animal.</p>
     </section>
 
-    <div class="principal__cabecalho">Confira nossos ultimos resgates</div>
+    <div class="principal__cabecalho">Confira nossos ultimos Cadastros</div>
 
     <main class="conteudo__principal">
         <ul class="lista-pets" id="ulCardAnimal">
-            <li class="lista">
-  
-                
-            </li>
+            <li class="lista"></li>
         </ul>
     </main>
 
     <footer class="rodape">
-        <div class="rodape__cabecalho">
-            <h1 class="rodape__titulo">AdotaPet</h1>
-            <img src="./img/v987-11a.jpg" alt="" srcset="" class="rodape__logo">
-        </div>
-
-        <div class="rodape__txt">
-            <p class="txt">Adote Petz é um programa criado para estreitar laços entre pessoas que têm o sonho de adotar um pet e nossas ONGs e protetores parceiros.
-            amos juntos incentivar a adoção, conscientizar sobre a posse responsável e fomentar a cultura de doação em prol do bem-estar animal.</p>
-        </div>
-
-        <section class="rodape__links">
-            <div class="links">
-                <h1 class="links__titulo">Institucional</h1>
-                <ul class="links__item">
-                    <li class="item">Sobre Nós</li>
-                    <li class="item">Os pets nas lojas</li>
-                    <li class="item">Transparência com você</li>
-                    <li class="item">histórias de impacto</li>
-                    <li class="item">Projetos Sociais</li>
-                    <li class="item">Unidades</li>
-                    <li class="item">FAQ</li>
-                </ul>
+        <div class="rodape-container">
+            <div class="rodape__cabecalho">
+                <h1 class="rodape__titulo">AdotaPet</h1>
+                <img src="./img/v987-11a.jpg" alt="" srcset="" class="rodape__logo">
             </div>
-
-            <div class="links">
-                <h1 class="links__titulo">Central de Atendimento</h1>
-                <ul class="links__item">
-                    <li class="item">Atendimento</li>
-                    <li class="item">Termos e condições</li>
-                    <li class="item">Leis para abandono animal</li>
-                </ul>
+            <div class="rodape__txt">
+                <p class="txt">LetsAdopt é um programa criado para estreitar laços entre pessoas que têm o sonho de adotar um pet e nossas ONGs e protetores parceiros.
+                amos juntos incentivar a adoção, conscientizar sobre a posse responsável e fomentar a cultura de doação em prol do bem-estar animal.</p>
             </div>
-        </section>
-
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/dev-anjos/" class="redes__img"><img src="./img/icones/linkedin.png" alt="Icone do Linkedin" srcset=""></a>
-            <a href="#" class="redes__img"><img src="./img/icones/facebook.png" alt="Icone do Facebook" srcset=""></a>
-            <a href="#" class="redes__img"><img src="./img/icones/instagram.png" alt="Icone do instagram" srcset=""></a>
-            <p class="redes__copyright">
-                Copyright (c) 2023 Dev Anjos
-                Todos diretos resevados
-            </p>
+            <section class="rodape__links">
+                <div class="links">
+                    <h1 class="links__titulo">Institucional</h1>
+                    <ul class="links__item">
+                        <li class="item">Sobre Nós</li>
+                        <li class="item">Os pets nas lojas</li>
+                        <li class="item">Transparência com você</li>
+                        <li class="item">histórias de impacto</li>
+                        <li class="item">Projetos Sociais</li>
+                        <li class="item">Unidades</li>
+                        <li class="item">FAQ</li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h1 class="links__titulo">Central de Atendimento</h1>
+                    <ul class="links__item">
+                        <li class="item">Atendimento</li>
+                        <li class="item">Termos e condições</li>
+                        <li class="item">Leis para abandono animal</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/dev-anjos/" class="redes__img" target="_blank"><img src="./img/icones/linkedin.png"  alt="Icone do Linkedin" srcset=""></a>
+                <a href="#" class="redes__img"><img src="./img/icones/facebook.png" alt="Icone do Facebook" srcset=""></a>
+                <a href="#" class="redes__img"><img src="./img/icones/instagram.png" alt="Icone do instagram" srcset=""></a>
+                <p class="redes__copyright">
+                    Copyright (c) 2023 Dev Anjos
+                    Todos diretos resevados
+                </p>
+            </div>
         </div>
     </footer>
 
-    
+    <script src="./js/script.js"></script>
     <script src="./js/registerResponsible.js" type="module" defer></script>   
     <script src="./js/showAnimal.js" type="module" defer ></script> 
     <script src="https://kit.fontawesome.com/0162deb0fb.js" defer></script>   

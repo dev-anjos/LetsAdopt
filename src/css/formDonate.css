@@ -15,7 +15,7 @@
     text-align: center;
     padding: 20px;
     border-radius:20px 20px ;
-    font-size: 20px;
+    font-size: 1.5vw;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     padding: 1em;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .formDonate-header-tittle{
@@ -34,7 +34,7 @@
     font-family: var(--fonte-princpal);
     color: var(--cor-azul);
     margin: 0 0 20px 0px ;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     text-align: left;
 }
@@ -42,7 +42,7 @@
 .personal-data{
     display: flex;
     flex-direction: column;
-    width: 10vw;
+    width: 12vw;
     margin-top: 10% ;
 }
 
@@ -129,6 +129,7 @@ hr{
     left: 80%;
 }
 .control select{ 
+    width: 20vw !important;
     color: var(--cor-azul) !important;
     background-color: rgb(255, 255, 255) !important;
     border: transparent !important;
@@ -148,18 +149,30 @@ hr{
     color: black !important;
 }
 
+@media screen and (max-width: 480px){
+    .formDonate{
+        width: 90vw !important;
+    }
+    .personal-data{
+        width: 30vw !important;;
+    }
+    .formDonate-header{
+        font-size: 5vw;
+    }
 
+}
 
 @media screen and (max-width: 768px) {
     .formDonate{
-        width: 60vw;
+        width: 90vw;
     }
 
     #messageBox{
-        width: 20%;
+        width: 40%;
         position:fixed;
         top: 20vh;
-        left: 80%;
+        left: 50%;
+        z-index: 1;
     }
     
     #messageSucess{
@@ -176,12 +189,25 @@ hr{
     .personal-data{
         display: flex;
         flex-direction: column;
-        width: 20vw;
+        width: 35vw;
         margin-top: 10% ;
     }
 
     .inputStyling::placeholder{
         font-size: 1rem;
+    }
+
+    .inputsContainer{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1028px){
+    .formDonate{
+        width: 50vw;
+    }
+    .personal-data{
+        width: 18vw;
     }
 }
 
