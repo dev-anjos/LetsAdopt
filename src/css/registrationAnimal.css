@@ -1,8 +1,6 @@
 .radioCenter{
     display: flex;
-    
-    align-items: center;    /* Alinha verticalmente */
-             
+    align-items: center;          
 }
 
 .message-body, .message-heade{

@@ -1,5 +1,5 @@
 .formDonate{
-    width: 30vw;
+    width: 40vw;
     background-color: var(--cor-bege);
     display: flex;
     flex-direction: column;
@@ -120,6 +120,7 @@ hr{
     position:fixed;
     top: 20vh;
     left: 80%;
+    z-index: 1;
 }
 
 #messageSucess{
@@ -127,6 +128,7 @@ hr{
     position: fixed;
     top: 20vh;
     left: 80%;
+    z-index: 1;
 }
 .control select{ 
     width: 20vw !important;
@@ -159,12 +161,18 @@ hr{
     .formDonate-header{
         font-size: 5vw;
     }
+    .control select{ 
+        width: 30vw !important;
+        color: var(--cor-azul) !important;
+        background-color: rgb(255, 255, 255) !important;
+        border: transparent !important;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
     .formDonate{
-        width: 90vw;
+        width: 90vw ;
     }
 
     #messageBox{
@@ -204,7 +212,8 @@ hr{
 
 @media screen and (max-width: 1028px){
     .formDonate{
-        width: 50vw;
+        width: 50vw ;
+        
     }
     .personal-data{
         width: 18vw;
