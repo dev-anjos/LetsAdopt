@@ -45,18 +45,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 </li>
             `).join('');
         } else {
-            animalDataDiv.textContent = 'Nenhum dado encontrado.';
+            animalDataDiv.innerHTML = `<div class="registrationMessage">
+            <p>Sem nenhum Animal cadastrado, <br><strong>seja o primeiro(a) a cadastrar. :)</strong></p><br>
+            <p> Clique em <strong>"Quero Doar"</strong>" para começar o cadastro</div>
+            
+            `;
         }
     }
 
     function searchAnimals (){
         const searchInput = searchBar.value.toLowerCase();
-        const filteredAnimals = animals.filter(animal => 
-            animal.nameAnimal.toLowerCase().includes(searchInput) ||
-            animal.animalSpecies.toLowerCase().includes(searchInput) ||
-            animal.animalBreed.toLowerCase().includes(searchInput) ||
-            animal.sex.toLowerCase().includes(searchInput) ||
-            animal.animalAge.toLowerCase().includes(searchInput)
+        
+        const filteredAnimals = animals.filter(({ nameAnimal, animalSpecies, animalBreed, sex, animalAge }) =>
+            [nameAnimal, animalSpecies, animalBreed, sex, animalAge].some(field =>
+                field.toLowerCase().includes(searchInput)
+            )
         );
         displayAnimals(filteredAnimals);
     }
@@ -65,5 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBar.addEventListener('input', searchAnimals);
 
     displayAnimals(animals);
+
+    const filteredAnimals = animals.filter(({ nameAnimal, animalSpecies, animalBreed, sex, animalAge }) =>
+        [nameAnimal, animalSpecies, animalBreed, sex, animalAge].some(field =>
+            field.toLowerCase().includes(searchInput)
+        )
+    );
     
 });
