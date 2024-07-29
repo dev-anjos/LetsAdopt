@@ -18,11 +18,11 @@ async function addressSearch(zipCode){
         stateCollected.value = consultaCEPConvertida.uf
         cityCollected.value = consultaCEPConvertida.localidade;
         roadCollected.value = consultaCEPConvertida.logradouro;
-     
+
         neighborhood.value = consultaCEPConvertida.bairro
 
-        console.log(consultaCEPConvertida);
         return consultaCEPConvertida;
+        
     } catch(erro){
 
         inputZipCode.classList.add('is-danger');
